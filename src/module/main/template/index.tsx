@@ -46,8 +46,8 @@ export default function MainTemplate({
       <div className="flex justify-center">
         <TextWithStroke
           text="포포월드"
-          textClassName="text-main-yellow-800 text-[3.5rem]"
-          strokeClassName="text-main-brown-800 text-[3.5rem] text-stroke-width-[0.4rem] text-stroke-color-main-brown-800"
+          textClassName="text-main-yellow-800 text-[3.5rem] tracking-[0.05rem]"
+          strokeClassName="text-main-brown-800 text-[3.5rem] text-stroke-width-[0.4rem] text-stroke-color-main-brown-800 tracking-[0.05rem]"
         />
       </div>
       {/* 퀴즈, 출석, 포인트 */}
@@ -76,8 +76,8 @@ export default function MainTemplate({
         <div className="absolute top-1.5 left-8">
           <TextWithStroke
             text="포크레인"
-            textClassName="text-main-yellow-800 text-[0.8rem]"
-            strokeClassName="text-main-brown-800 text-[0.8rem] text-stroke-width-[0.12rem] text-stroke-color-main-brown-800"
+            textClassName="text-main-yellow-800 text-[0.8rem] tracking-[0.05rem]"
+            strokeClassName="text-main-brown-800 text-[0.8rem] text-stroke-width-[0.12rem] text-stroke-color-main-brown-800 tracking-[0.05rem]"
           />
         </div>
         <div className="relative w-5.5 h-5.5 left-4 inline-flex items-center gap-0.5">
@@ -85,8 +85,8 @@ export default function MainTemplate({
           <TextWithStroke
             text="2000냥"
             className="whitespace-nowrap"
-            textClassName="text-main-yellow-800 text-[0.7rem]"
-            strokeClassName="text-main-brown-800 text-[0.7rem] text-stroke-width-[0.12rem] text-stroke-color-main-brown-800"
+            textClassName="text-main-yellow-800 text-[0.7rem] tracking-[0.07rem]"
+            strokeClassName="text-main-brown-800 text-[0.7rem] text-stroke-width-[0.12rem] text-stroke-color-main-brown-800 tracking-[0.07rem]"
           />
         </div>
       </div>
