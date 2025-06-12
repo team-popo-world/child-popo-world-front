@@ -27,6 +27,7 @@ export async function sendTurnData(
   turnNumber: number,
   turnData: TurnData
 ): Promise<SendTurnResult> {
+  console.log(JSON.stringify(turnData, null, 2));
   try {
     const response = await apiClient.post(`/api/invest/chapter/turn`, {
       chapterId: chapterId,

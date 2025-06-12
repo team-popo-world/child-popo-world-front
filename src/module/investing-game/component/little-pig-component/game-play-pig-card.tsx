@@ -60,13 +60,13 @@ export const GamePlayPigCard = ({
   };
 
   return (
-    <div className="relative flex flex-col items-start px-4 py-2 w-44 h-55 bg-main-yellow-300 border-2 xl:border-5 border-main-brown-450 rounded-xl">
-      <img src={pigImage} alt={name} className="self-center min-w-0 h-14 object-contain mt-4 mb-2" />
+    <div className="relative flex flex-col items-start px-4 py-2 w-44 h-59 bg-main-yellow-300 border-2 xl:border-5 border-main-brown-450 rounded-xl">
+      <img src={pigImage} alt={name} className="self-center min-w-0 h-14 object-contain mt-4 mb-1" />
       <h4 className="mb-0.5 text-main-brown-575 text-[0.7rem] font-bold self-center"> {name}</h4>
-      <p className="mb-1 text-main-brown-575 text-[0.55rem] font-bold leading-[1.1]">{expectation}</p>
-      <div className="flex items-center gap-x-0.5 mb-0.5">
+      <p className="mb-1 text-main-brown-575 text-[0.55rem] font-bold ">{expectation}</p>
+      <div className="flex items-center gap-x-0.5 mb-0.5 mt-auto">
         <img src={coin} alt="코인" className="w-3 h-3 object-contain" />
-        <span className="text-main-brown-575 text-[0.55rem] font-bold">현재가격: {currentPrice}냥</span>
+        <span className="text-main-brown-575 text-[0.55rem] font-bold ">현재가격: {currentPrice}냥</span>
         <span
           className={clsx("pl-1.5 text-[0.5rem] font-bold", {
             "text-main-red-600": priceChange > 0,
