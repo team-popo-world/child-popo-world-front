@@ -13,6 +13,7 @@ interface ChapterResult {
 
 export async function getChapterData(chapterId: string): Promise<ChapterResult> {
   try {
+    console.log("chapterId", chapterId);
     const response = await apiClient.post("/api/invest/chapter", {
       chapterId: chapterId,
     });

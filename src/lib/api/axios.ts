@@ -45,7 +45,7 @@ const apiClient = axios.create({
  */
 apiClient.interceptors.request.use(
   (config) => {
-    const token = Cookies.get("token");
+    const token = Cookies.get("accessToken");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -55,6 +55,8 @@ apiClient.interceptors.request.use(
     if (config.data instanceof FormData) {
       config.headers["Content-Type"] = "multipart/form-data";
     }
+
+    // 요청 헤더 로깅
 
     return config;
   },
@@ -74,6 +76,8 @@ apiClient.interceptors.request.use(
  */
 apiClient.interceptors.response.use(
   (response) => {
+    // 응답 헤더 로깅
+    console.log("응답 헤더:", JSON.stringify(response.headers, null, 2));
     return response;
   },
   async (error: AxiosError) => {
