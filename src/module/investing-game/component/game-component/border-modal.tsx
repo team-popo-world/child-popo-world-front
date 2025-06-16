@@ -17,7 +17,7 @@ export const BorderModal = ({ children, borderColor, borderStrokeColor, classNam
       style={{ backgroundColor: borderColor, borderColor: borderStrokeColor }}
     >
       <div
-        className={`relative px-10 w-[32.25rem] h-[20.25rem] bg-white border-2 md:border-3 xl:border-4 rounded-3xl ${className}`}
+        className={`relative w-[32.25rem] h-[20.25rem] bg-white border-2 md:border-3 xl:border-4 rounded-3xl ${className}`}
         style={{ borderColor: borderStrokeColor }}
       >
         {children}

@@ -36,7 +36,7 @@ export const GameStartExplain = ({
     <BorderModal
       borderColor={borderColor}
       borderStrokeColor={borderStrokeColor}
-      className={`flex flex-col items-start `}
+      className={`flex flex-col items-start px-6`}
     >
       <img src={closeButton} alt="닫기" className="  absolute top-3 right-3 w-5 h-5 object-contain" onClick={onClose} />
       {/* 게임 설명 제목 */}
@@ -45,7 +45,7 @@ export const GameStartExplain = ({
       </h1>
       {/* 게임 설명 내용 */}
       {/* tracking-[0.02rem] 글자 간격 조정 */}
-      <p className={`text-xs font-bold mb-3 letter-spacing: tracking-[0.02rem]`} style={{ color: textColor }}>
+      <p className={`px-4 text-xs font-bold mb-3 letter-spacing: tracking-[0.02rem]`} style={{ color: textColor }}>
         {gameDescription}
       </p>
       {/* 모의투자에서 돼지들 설명 영역 */}

@@ -88,7 +88,7 @@ const INITIAL_GAME_STATE: GameState = {
 };
 
 const CHAPTER_ID = {
-  little_pig: "1111",
+  "little-pig": "1111",
   truck: "2222",
   ninja: "3333",
   masic: "4444",

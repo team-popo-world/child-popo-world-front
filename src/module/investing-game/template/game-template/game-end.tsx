@@ -349,7 +349,7 @@ export const GameEnd = ({
 
   return (
     <Background backgroundImage={backgroundImage} backgroundClassName="flex flex-col items-center justify-center">
-      <BorderModal className="flex flex-col items-center" borderColor="#fff9d0" borderStrokeColor="#7b5025">
+      <BorderModal className="flex flex-col items-center px-10" borderColor="#fff9d0" borderStrokeColor="#7b5025">
         {/* 제목 */}
         <TextWithStroke
           text="투자 결과!"

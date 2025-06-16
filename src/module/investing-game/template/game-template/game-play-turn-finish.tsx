@@ -37,7 +37,11 @@ export const GamePlayTurnFinish = ({
   borderStrokeColor,
 }: GamePlayTurnFinishProps) => {
   return (
-    <BorderModal className="flex flex-col items-start" borderColor={borderColor} borderStrokeColor={borderStrokeColor}>
+    <BorderModal
+      className="flex flex-col items-start px-10 "
+      borderColor={borderColor}
+      borderStrokeColor={borderStrokeColor}
+    >
       <h1 className={`self-center mt-2.5 mb-1.5 text-[1.65rem] font-extrabold`} style={{ color: titleTextColor }}>
         {turn + 1 <= 6 ? turn + 1 : turn}
         {turn + 1 <= 6 ? "턴 시작!" : "턴 종료!"}

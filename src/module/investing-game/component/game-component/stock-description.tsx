@@ -21,7 +21,7 @@ export const StockDescription = ({ image, label, children, bgColor }: StockDescr
       </div>
       <div className="flex items-center">
         {/* tracking-[0.01rem] 글자 간격 조정 */}
-        <ol className="text-[0.55rem] font-base list-disc space-y-1 pl-4 tracking-[0.01rem]">{children}</ol>
+        <ol className="text-[0.6rem] font-base list-disc space-y-1 pl-4 tracking-[0.01rem]">{children}</ol>
       </div>
     </div>
   );
